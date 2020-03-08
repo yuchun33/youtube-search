@@ -1,3 +1,5 @@
 node_modules
 /src/actions/myKey.js
 /src/data.json
+/dist
+/public

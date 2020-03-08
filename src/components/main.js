@@ -26,7 +26,7 @@ class Main extends Component {
                 <div className='queryDiv'>
                 <form>
                     <input className="keyWordInput" value={this.state.keyword} name='keyword' type='text' placeholder="Youtube Search API" onChange={this.handleChange}></input>
-                    <button className="queryBtn" onClick={this.handleSubmit}><img src="https://img.icons8.com/android/30/ffffff/search.png"></img></button>
+                    <button className="queryBtn" onClick={this.handleSubmit}><img src="https://img.icons8.com/android/30/f6a52d/search.png"></img></button>
                 </form>
                 </div>
 

@@ -1,5 +1,6 @@
 .queryDiv{
-    background: linear-gradient(40deg, rgba(242,176,69) 0%,  rgba(246,165,45) 60%, rgba(242,176,69) 100%);
+    /* background: linear-gradient(40deg, rgba(242,176,69) 0%,  rgba(246,165,45) 60%, rgba(242,176,69) 100%); */
+    background: rgba(255,255,255,0.9);
     margin-bottom: 20px;
     padding: 12px;
     width: 80%;
@@ -8,6 +9,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: fixed;
 }
 .title{
     align-self: start;
@@ -20,10 +22,10 @@
     padding: 6px;
     font-size: 20px;
     width: 300px;
-    color: #ffffff;
+    color: rgba(246,165,45);
     background: none;
     border: none;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid rgba(246,165,45);
 }
 .queryBtn{
     background: none;
@@ -46,6 +48,7 @@
     width: 80%;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 80px;
 }
 
 .videoBox{
