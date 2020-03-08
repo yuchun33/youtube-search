@@ -1,4 +1,4 @@
-import {QUERY_LISTS, RECEIVE_LISTS, LOAD_FROM_CACHE} from '../actions'
+import {QUERY_LISTS, RECEIVE_LISTS, LOAD_FROM_CACHE, FIRST_QUERY_LISTS} from '../actions'
 import * as data from '../data.json'
 let defaultData = data.default
 function defaultDisplay(json) {
@@ -38,11 +38,21 @@ const searchList = (state={
     page: 0
 },action) => {
     switch (action.type) {
+        case FIRST_QUERY_LISTS:
+            return Object.assign({},state,{
+                isFetching: true,
+                page: action.page,
+                keyword: action.keyword,
+                cache: [],
+                items: {},
+                display: [],
+                pageToken: {},
+            })
         case QUERY_LISTS:
             return Object.assign({},state,{
                 isFetching: true,
                 page: action.page,
-                keyword: action.keyword
+                keyword: action.keyword,
             })
         case RECEIVE_LISTS:
             return Object.assign({},state,{

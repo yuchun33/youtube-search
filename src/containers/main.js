@@ -1,6 +1,6 @@
 import Main from '../components/main.js'
 import {connect} from 'react-redux'
-import {query, clickPage} from '../actions'
+import {firstQuery, clickPage} from '../actions'
 
 const mapStateToProps = (state, ownProps) =>{
     return{
@@ -11,7 +11,7 @@ const mapStateToProps = (state, ownProps) =>{
 const dispatchToProps = (dispatch, ownProps) =>{
     return{
         query: (keyword, page)=>{            
-            dispatch(query(keyword, page))
+            dispatch(firstQuery(keyword, page))
 
         },
         clickPage: (page)=>{            
