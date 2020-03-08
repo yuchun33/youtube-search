@@ -2,8 +2,7 @@
 
 
 ## [Demo](http://13.231.173.176/youtubeSearch/)  
-<img src="./imgs/01.png" height='300px'>
-<img src="./imgs/02.png" height='300px'>
+<img src="./imgs/01.png" height='300px'><img src="./imgs/02.png" height='300px'>
 
 + 使用 react + redux
 + 有實作快取功能
